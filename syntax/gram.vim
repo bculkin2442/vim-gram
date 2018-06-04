@@ -7,7 +7,7 @@ syntax match gramPragmaLine contains=gramPragma,gramPragmaName "\v^pragma .*$"
 syntax keyword gramPragma contained pragma
 highlight link gramPragma keyword
 
-syntax match gramPragmaName "\vpragma \zs\w+" contained
+syntax match gramPragmaName "\vpragma \zs\S+" contained
 highlight link gramPragmaName Identifier
 
 syntax match gramComment "\v#.*$"
