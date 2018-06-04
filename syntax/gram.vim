@@ -16,4 +16,4 @@ highlight link gramRuleRef Identifier
 syntax match gramParserRule "\v\<[^>]"
 highlight link gramParserRule PreProc
 
-set b:current_syntax="gram"
+let b:current_syntax="gram"
