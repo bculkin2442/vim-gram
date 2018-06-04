@@ -2,10 +2,10 @@ if exists("b:current_syntax")
 	finish
 endif
 
-syntax matches gramPragma "\v^pragma"
+syntax match gramPragma "\v^pragma"
 highlight link gramPragma keyword
 
-syntax match gramPragmaName "\v^pragma \zs\S+"
+syntax match gramPragmaName "\v^pragma \zs\S+\ze"
 highlight link gramPragmaName Identifier
 
 syntax match gramComment "\v#.*$"
