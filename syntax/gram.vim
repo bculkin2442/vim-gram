@@ -2,8 +2,13 @@ if exists("b:current_syntax")
 	finish
 endif
 
-syntax keyword gramKeyword pragma
-highlight link gramKeyword keyword
+syntax match gramPragmaLine contains=gramPragma,gramPragmaName "\v^pragma .*$"
+
+syntax keyword gramPragma contained pragma
+highlight link gramPragma keyword
+
+syntax match gramPragmaName "\vpragma \zs\w+" contained
+highlight link gramPragmaName Identifier
 
 syntax match gramComment "\v#.*$"
 highlight link gramComment Comment
