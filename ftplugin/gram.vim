@@ -3,5 +3,5 @@ if exists("b:did_ftplugin")
 endif
 let b:did_ftplugin = 1
 
-setlocal textwidth = 0
-setlocal formatoptions += l
+setlocal textwidth=0
+setlocal formatoptions+=l
